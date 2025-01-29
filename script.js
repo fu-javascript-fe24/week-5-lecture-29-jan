@@ -1,6 +1,12 @@
 console.log('Hello from script');
 
 let globalUsers = [];
+pageSetup();
+
+function pageSetup() {
+    initGlobalUsers();
+    renderUsers();
+}
 
 function initGlobalUsers() {
     globalUsers.push({
